@@ -1,0 +1,37 @@
+<app-header></app-header>
+<!--ngx-skeleton-loader count="10" appearance="line" *ngIf="loader"></ngx-skeleton-loader-->
+<app-principal></app-principal>
+<app-novedades></app-novedades>
+<app-multimedios></app-multimedios>
+<app-destacados></app-destacados>
+<app-agenda></app-agenda>
+<app-etiquetas></app-etiquetas>
+<app-footer></app-footer>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+    </div>
+  </div>
+
+<button id="topButton"
+  class="fixed z-10 p-3 bg-gray-100 rounded-full shadow-md bottom-10 right-10 animate-bounce">
+  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18">
+      </path>
+  </svg>
+</button>
+
+
+
+<router-outlet></router-outlet>
+

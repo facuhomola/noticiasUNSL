@@ -1,0 +1,65 @@
+<section id="novedades" class="mt-10 mb-5">
+    <div class="container mx-auto">
+        <h2 class="text-2xl mb-5">Últimas novedades</h2>
+        <div class="grid md:grid-cols-4 lg:grid-cols-4 sm:grid-cols-1 gap-y-4 gap-x-6" >
+            <div class="flex flex-col"*ngFor=" let dat of data">                
+                <div class="relative flex flex-col md:flex-col md:space-x-0 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl border border-white bg-white">
+                    <a href="{{dat.link}}">
+                        <!--img class="rounded-2xl" [src]="dat.embeddable['wp:featuredmedia'].source_url" alt="{{dat.title}}" height="910px" width="100%"/-->
+                    </a>
+                    <div class="p-2 pt-6">
+                        <div class="flex-row">
+                            <a class="mr-2 text-white tracking-widest bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-light rounded-full text-sm px-5 py-2.5 text-center mb-2 tracking-2">{{dat.categories[0]}}</a>                            
+                            <button type="button" class="mr-2 text-gray-600 tracking-widest bg-gray-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-light rounded-full text-xs py-2 px-3 text-center mb-2 tracking-2">Compartir</button>                            
+                        </div>                        
+                        <h5 class="mb-2 mt-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">{{dat.title.rendered}}</h5>                        
+                    </div>
+                </div>
+            </div>
+            <!--div class="flex flex-col">
+                <div class="relative flex flex-col md:flex-col md:space-x-0 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl border border-white bg-white">
+                    <a href="#">
+                        <img class="rounded-2xl" src="http://www.noticias.unsl.edu.ar/wp-content/uploads/2022/08/WhatsApp-Image-2022-08-08-at-1.05.34-PM-1000x600.jpeg" height="910px" width="100%"/>
+                    </a>
+                    <div class="p-2 pt-6">
+                        <div class="flex-row">
+                            <a class="mr-2 text-white tracking-widest bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-light rounded-full text-sm px-5 py-2.5 text-center mb-2 tracking-2">Sociedad</a>                            
+                            <a class="mr-2 text-white tracking-widest bg-gray-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-light rounded-full text-sm px-4 py-2.5 text-center mb-2 tracking-2">Y</a>                            
+                        </div>                        
+                        <h5 class="mb-2 mt-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Peirano vivió la experiencia de realidad virtual en UNSL TV</h5>                        
+                    </div>
+                </div>
+            </div> 
+            <div class="flex flex-col">
+                <div class="relative flex flex-col md:flex-col md:space-x-0 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl border border-white bg-white">
+                    <a href="#">
+                        <img class="rounded-2xl" src="http://www.noticias.unsl.edu.ar/wp-content/uploads/2022/08/WhatsApp-Image-2022-08-08-at-1.05.34-PM-1000x600.jpeg" height="910px" width="100%"/>
+                    </a>
+                    <div class="p-2 pt-6">
+                        <div class="flex-row">
+                            <a class="mr-2 text-white tracking-widest bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-light rounded-full text-sm px-5 py-2.5 text-center mb-2 tracking-2">Sociedad</a>                            
+                            <a class="mr-2 text-white tracking-widest bg-gray-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-light rounded-full text-sm px-4 py-2.5 text-center mb-2 tracking-2">Y</a>                            
+                        </div>                        
+                        <h5 class="mb-2 mt-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Peirano vivió la experiencia de realidad virtual en UNSL TV</h5>                        
+                    </div>
+                </div>
+            </div>   
+            <div class="flex flex-col">
+                <div class="relative flex flex-col md:flex-col md:space-x-0 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl border border-white bg-white">
+                    <a href="#">
+                        <img class="rounded-2xl" src="http://www.noticias.unsl.edu.ar/wp-content/uploads/2022/08/WhatsApp-Image-2022-08-08-at-1.05.34-PM-1000x600.jpeg" height="910px" width="100%"/>
+                    </a>
+                    <div class="p-2 pt-6">
+                        <div class="flex-row">
+                            <a class="mr-2 text-white tracking-widest bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-light rounded-full text-sm px-5 py-2.5 text-center mb-2tracking-2">Sociedad</a>                            
+                        </div>                        
+                        <h5 class="mb-2 mt-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Peirano vivió la experiencia de realidad virtual en UNSL TV</h5>                        
+                    </div>
+                </div>
+            </div-->                    
+        </div>
+                
+            
+        
+    </div>
+</section>

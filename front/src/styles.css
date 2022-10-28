@@ -1,0 +1,122 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* You can add global styles to this file, and also import other style files */
+
+/*colores*/
+:root {
+    --color-principal: #090028;
+    --color-secundario: #FFFFFF;
+    --color-celeste: #1D70B7;
+    --color-amarillo: #E4CB25;
+    --color-grisFondo: #DFDFDF;
+    --color-azul: #304FD2;
+    --opacidad-texto: 0.9;
+}
+
+/*FUENTES*/
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+/*
+font-family: 'Gotham', sans-serif;
+font-family: 'Gotham Black', sans-serif;
+font-family: 'Gotham Light', sans-serif;
+font-family: 'Gotham Thin', sans-serif;
+font-family: 'Gotham XLight', sans-serif;
+font-family: 'Gotham Book', sans-serif;
+font-family: 'Gotham Ultra', sans-serif;
+*/
+
+/*Encabezados - fuente: Gotham*/
+h1{ 
+    /*titulos de secciones*/
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Gotham', sans-serif;
+}
+h2{ 
+    /*titulos de secciones*/
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Gotham', sans-serif;
+}
+h3{ 
+    /*titulos de secciones*/
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Gotham', sans-serif;
+}
+h4{
+    
+    font-weight: 500;
+    font-family: 'Gotham', sans-serif; 
+}
+
+.fontgotham{
+    font-weight: 300;
+    font-family: 'Gotham', sans-serif;
+}
+
+p{
+    /*parrafos*/
+    /*font-size: 12px;
+    font-family: 'Gotham Light', sans-serif;*/
+    @font-face {
+        font-family: 'Gotham Black';
+        font-style: normal;
+        font-weight: 500;
+        src: local('Gotham Black'), url('https://fonts.cdnfonts.com/s/14898/Gotham-Black.woff') format('woff');
+    }
+}
+
+/*boton de medios*/
+.medios{
+    height: 42px;
+    border-radius: 30px;
+    background-color: #0F0042!important;
+    font-size: 14px;
+    border-style: none;
+    font-family: 'Gotham Light', sans-serif!important;
+    z-index: 0;
+}
+/*.dropdown-toggle:hover{
+    color: var(--color-secundario);
+}*/
+
+/*Cards de noticias*/
+.card-noticias{
+    background-color: #fff !important;
+    color: #0F0042 !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+}
+
+/*secciones*/
+#hSecciones{
+    margin-top: 10%;
+    font-size: medium;
+}
+
+/*links de secciones*/
+.linkInactivos{
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+
+/*imagenes de redes sociales*/
+.img-redesSociales{
+    display: inline-block;
+    max-width: 45px;
+    max-height: 45px;
+    margin-right: 3%;
+}
+
+/*agregar
+- probar componente card
+- sección novedades
+- noticias destacadas
+*/
